@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antares</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="restaurante">
+        <h1>Antares</h1>
+        <div class="formularios">
+        <form class="agregar-mesa">
+            <h2>Agregar mesa</h2>
+            <div class="opciones">
+                <div class="inputs">
+            <select class="rango" id="sector">
+                <option value="Adentro">Adentro</option>
+                <option value="Afuera">Afuera</option>
+            </select>
+            <input class="rango min-range" type="number" placeholder="Minimo" min="1">
+            <input class="rango max-range" type="number" placeholder="Maximo" min="1">
+        </div>
+            <div class="checks">
+        </div>
+        </div>
+            <button>Agregar</button>
+        </form>
+        <div class="accion-forms">
+            <form class="guest-list">
+                <h2>Lista de espera</h2>
+                <div><input class="rango" type="number" placeholder="Maxima cantidad"></div>
+                <button>Aceptar</button>
+            </form>
+            <form class="add-reserva">
+                <h2>Agregar reserva</h2>
+                <div>
+                    <select class="rango" id="sector">
+                        <option value="Adentro">Adentro</option>
+                        <option value="Afuera">Afuera</option>
+                    </select>
+                <div><input class="rango" type="number" placeholder="Cantidad" min="1"></div>
+            </div>
+            <button>Agregar</button>
+            </form>
+        </div>
+    </div>
+        <div class="sector adentro">
+            <h2>Adentro</h2>
+            <div class="datos-sector">
+                <p class="capacidad">Capacidad: 0</p>
+                <p class="off">Full off</p>
+            </div>
+            <div class="sector-mesas adentro-mesas">
+    </div>
+    </div>
+    <div class="sector afuera">
+        <h2>Afuera</h2>
+        <div class="datos-sector">
+            <p class="capacidad">Capacidad: 0</p>
+            <p class="off">Full off</p>
+        </div>
+        <div class="sector-mesas afuera-mesas">
+    </div>
+    <div class="lista">
+        <h3>Lista de espera <span>(Max: 100)</span></h3>
+        <hr>
+        <p>5 personas</p>
+    </div>
+</div>
+    </div>
+    <script src="js/agregarMesas.js"></script>
+    <script src="js/listaDeEspera.js"></script>
+</body>
+</html>

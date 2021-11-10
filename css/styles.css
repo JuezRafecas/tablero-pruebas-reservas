@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+.restaurante{
+    background-color: #e2e2e2;
+    border-radius: 1em;
+    box-shadow: 2px 4px 4px darkgray;
+    border: none;
+    width: 80vw;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.restaurante h1{
+    text-align: center;
+    font-size: 3em;
+}
+.formularios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+.sector{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    width: 1000px;
+}
+.sector h2{
+    font-size: 2em;
+}
+.agregar-mesa{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-self: flex-start;
+    box-shadow: 2px 4px 4px darkgray;
+    border-radius: 1em;
+    border: none;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3a9fda8e;
+}
+.accion-forms{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-self: flex-start;
+    box-shadow: 2px 4px 4px darkgray;
+    border-radius: 1em;
+    border: none;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3a9fda8e;
+}
+.guest-list, .add-reserva{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.guest-list input{
+    width: 150px;
+}
+.add-reserva div{
+    display: flex;
+    gap: 1em;
+}
+.opciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    flex-direction: column;
+}
+.checks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    gap: 1em;
+}
+.rango{
+    border-radius: 1em;
+    font-size: 0.8em;
+    box-shadow: 2px 4px 4px darkgray;
+    border: none;
+    width: 100px;
+    height: 25px;
+    padding-left: 1em;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+button{
+    padding: 0.3em 1em;
+    border-radius: 1em;
+    font-size: 1.2em;
+    box-shadow: 2px 4px 4px darkgray;
+    border: none;
+    background-color: #3a9fda;
+    color: #ffffff;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: none;
+    background-color: #083246;
+    transition: all .3s;
+}
+.sector-lista{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+.sector-mesas{
+    background-color: #3a9fda;
+    border-radius: 1em;
+    box-shadow: 2px 4px 4px darkgray;
+    border: none;
+    width: 63vw;
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    min-height: 120px;
+}
+
+.lista{
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 2px 4px 4px darkgray;
+    background-color: #ffffff;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.lista span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.lista p {
+    padding: 1em 0em;
+}
+
+.mesa{
+    width: 75px;
+    height: 75px;
+    background-color: #083246;
+    color: #ffffff;
+    border-radius: 1em;
+    box-shadow: 2px 4px 4px darkgray;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    cursor: pointer;
+}
+.mesa h3{
+    font-size: 2em;
+}
+.mesa:hover{
+    box-shadow: none;
+    transition: all .3s;
+}
+.datos-sector{
+    display: flex;
+    gap: 1em;
+}
+.datos-sector p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.off{
+    color: green;
+}
+.on{
+    color: red;
+}
