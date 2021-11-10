@@ -1,5 +1,6 @@
 window.onload = () =>{
 
+    //Inicializo datos
     let data = {
         adentro: {
             mesas: [],
@@ -44,6 +45,13 @@ window.onload = () =>{
         e.preventDefault();
         agregarMesa();
 
+    })
+
+    const formularioListaEspera = document.querySelector('.guest-list');
+    formularioListaEspera.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        let maxLista = document.querySelector('.lista h3 span');
+        maxLista.innerText = `(Max: ${parseInt(document.querySelector('.guest-list div input').value)})`;
     })
 
     function agregarMesa(){
@@ -103,12 +111,4 @@ window.onload = () =>{
         let capacidad = document.querySelector(`.${sector} div .capacidad`);
         capacidad.innerText = `Capacidad: ${cubiertosTotales}`;
     }
-
-
-    const formularioListaEspera = document.querySelector('.guest-list');
-    formularioListaEspera.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        let maxLista = document.querySelector('.lista h3 span');
-        maxLista.innerText = `(Max: ${parseInt(document.querySelector('.guest-list div input').value)})`;
-    })
 }

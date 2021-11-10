@@ -179,7 +179,7 @@ button:hover{
     background-color: #083246;
     color: #ffffff;
     border-radius: 1em;
-    box-shadow: 2px 4px 4px darkgray;
+    box-shadow: 2px 4px 4px #ffffff;
     border: none;
     display: flex;
     flex-direction: column;
